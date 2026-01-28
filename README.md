@@ -1,6 +1,6 @@
 # Challenge
 ## How to run the code
-(Normally, but I pushed everything:
+(Normally, but I pushed everything from venv:
 1. Create a virtual environment by running python -m venv venv and activate it using venv\Scripts\activate.
 2. Install dependencies with python -m pip install -r requirements.txt.)
 
@@ -16,12 +16,12 @@
 - chose Django because it is a popular framework with a lot of built-in features, allows development of robust applications
 - installed the Django REST framework because we are building an API
 - chose Gemini because it is one of the most commonly used models, very capable for text processing and generation nowadays
--chose Gemini 3 Flash because it is the current most balanced Gemini model, prioritizes speed and scalability
+- chose Gemini 3 Flash because it is the current most balanced Gemini model, prioritizes speed and scalability
 - interaction with Gemini: model like interaction with a chatbot as a simplification because of time constraints, which is a matching metaphor for the required communication (user input->response); then further specify interaction with system_instruction for model
 - therefore using HTML page accessible through development server to input text as of now
 
 
 ## Future improvements/additions
-- remove “chatbot” structure, instead of textual reply return result as type list (including the list of errors found in the text along with their corrections and the type of error)
-- test API with different input lengths, different grammatical errors
+- remove “chatbot” structure, instead of textual reply final result should have type list (including the list of errors found in the text along with their corrections and the type of error)
+- test API with different input lengths, different grammatical errors, low/high traffic
 - evaluate response time, correctness
