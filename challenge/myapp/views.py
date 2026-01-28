@@ -9,7 +9,9 @@ import json
 
 genai.configure(api_key=settings.GOOGLE_API_KEY)
 print("Gemini API Key:", settings.GOOGLE_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel(
+    "gemini-3-flash",
+    system_instruction="You are a grammar checker. Check the user's input text and returna list of errors found in the text along with their corrections and the type of error.")
 chat = model.start_chat(history=[])
 
 @csrf_exempt
